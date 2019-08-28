@@ -1,0 +1,80 @@
+body{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; 
+    -webkit-box-shadow: 3px 3px 5px 6px rgb(75, 73, 73);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 5px 6px rgb(75, 73, 73);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px rgb(75, 73, 73); /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+
+    .mid,.bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 0;
+        
+        .image{
+            max-width:30%;
+            height: auto;
+        }
+
+        .text{
+            max-width: 60%;
+            height: auto;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+
+        }
+    }
+
+    .mid{
+        margin: 30px auto;
+    }
+
+    .top{
+        display: flex;
+        flex-flow: column;
+        height: 25vh;
+        padding-top: 12vh;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 5px double white;
+
+        h4{
+            text-align: center;
+        }
+
+        .input{
+            width: 25%;
+            height: 30px;
+        }
+
+        .button {
+            .custom-btn();
+            
+    
+            &:hover{
+              background:orange;
+              color:white;
+              border: 2px solid black;
+            }
+          }
+
+    }
+
+    
+}
+
