@@ -222,6 +222,7 @@ p {
   border-bottom: 2px solid black;
 }
 footer {
+  margin-top: 25px;
   font-size: 1.6rem;
   color: #22283B;
   border-top: 5px double black;
@@ -307,6 +308,14 @@ body .top .button:hover {
   background: orange;
   color: white;
   border: 2px solid black;
+}
+@media (max-width: 800px) {
+  .navTop {
+    width: 100%;
+  }
+  .navTop nav {
+    width: 95%;
+  }
 }
 @media (max-width:500px) {
   html {
