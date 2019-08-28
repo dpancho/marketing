@@ -172,8 +172,8 @@ h5 {
   opacity: 1;
 }
 p {
-  font-size: 2.5rem;
-  line-height: 1.4;
+  font-size: 2.2rem;
+  line-height: 1.5;
   font-weight: 800;
   opacity: 1;
 }
@@ -228,7 +228,7 @@ footer {
   background: #b2b2b2;
   opacity: 0.9;
   padding: 20px 0;
-  height: 6vh;
+  height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,4 +307,40 @@ body .top .button:hover {
   background: orange;
   color: white;
   border: 2px solid black;
+}
+@media (max-width:500px) {
+  html {
+    background: black;
+  }
+  .navTop {
+    width: 100%;
+  }
+  .navTop nav {
+    width: 95%;
+  }
+  .container {
+    flex-flow: column;
+    justify-content: center;
+    opacity: 1;
+  }
+  .container .mid {
+    width: 100%;
+  }
+  .container .text {
+    max-width: 95% !important ;
+  }
+  .container .image:nth-child(2) {
+    display: none;
+  }
+  .container .image {
+    min-width: 90%;
+    padding-bottom: 20px;
+  }
+  .container .btn {
+    width: 90% !important;
+    margin-left: 5%;
+  }
+  footer {
+    height: 50px;
+  }
 }

@@ -78,3 +78,63 @@ body{
     
 }
 
+//------------------------//
+//----------Media---------//
+//.......................//
+
+@media @phone{
+    html{
+        background: @body-color;
+    }
+    .navTop{
+        width: 100%;
+      nav{
+        width: 95%;
+      }
+    }
+    
+    .container{
+      flex-flow: column;
+      justify-content: center;
+      opacity: 1;
+      
+      .mid{
+        width: 100%;
+      }
+
+      .text{
+          max-width: 95% !important ;
+      }
+      
+      .image:nth-child(2){
+        display: none;
+      } 
+  
+      .image{
+       min-width: 90%;
+       padding-bottom: 20px;
+      }
+  
+      .btn{
+        width: 90% !important;
+        margin-left: 5%;
+      }
+    }//---container
+
+    footer{
+        height: 50px;
+    }
+  
+    // .walk{
+    //   display: flex;
+    //   flex-direction: column-reverse;
+    //   justify-items: center;
+    //   margin: 0 auto !important;
+    //   padding: 15px 0 !important;
+      
+    //   .walk-text, .walk-img{
+    //     width: 95% !important;
+    //     padding: 15px !important;
+    //   }
+    // }//---walk
+  }
