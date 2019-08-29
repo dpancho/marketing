@@ -265,8 +265,16 @@ body .bottom .image {
 }
 body .mid .text,
 body .bottom .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
   max-width: 60%;
   height: auto;
+}
+body .mid .text h3,
+body .bottom .text h3 {
+  padding-bottom: 20px;
 }
 body .mid img,
 body .bottom img {
