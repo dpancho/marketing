@@ -135,11 +135,9 @@ html {
   background-size: cover;
 }
 .container {
-  height: 94vh;
   background: black;
   color: white;
   opacity: 0.9;
-  padding: auto 10px;
 }
 * {
   box-sizing: border-box;
@@ -172,6 +170,7 @@ h5 {
   opacity: 1;
 }
 p {
+  text-align: center;
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: 800;
@@ -185,7 +184,7 @@ p {
   align-content: space-between;
   position: fixed;
   width: 1000px;
-  height: 10vh;
+  height: 150px;
   background: #b2b2b2;
   color: black;
   padding: 10px 0;
@@ -279,9 +278,10 @@ body .mid {
 }
 body .top {
   display: flex;
+  flex-wrap: wrap;
   flex-flow: column;
-  height: 25vh;
-  padding-top: 12vh;
+  height: 350px;
+  padding-top: 175px;
   padding-bottom: 20px;
   align-items: center;
   justify-content: space-evenly;
@@ -308,6 +308,30 @@ body .top .button:hover {
   background: orange;
   color: white;
   border: 2px solid black;
+}
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.people h4 {
+  justify-content: center;
+  text-align: center;
+}
+.people .individuals {
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+}
+.people .image {
+  width: 30%;
+  height: auto;
+}
+.people .text {
+  width: 100%;
+  height: auto;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   .navTop {
@@ -348,6 +372,23 @@ body .top .button:hover {
   .container .btn {
     width: 90% !important;
     margin-left: 5%;
+  }
+  .top {
+    height: 400px !important;
+    margin-bottom: 20px;
+  }
+  .people {
+    display: flex;
+    justify-content: center;
+  }
+  .people h4 {
+    border-bottom: 3px solid white;
+  }
+  .people .individuals {
+    justify-content: center;
+  }
+  .people .image {
+    display: none;
   }
   footer {
     height: 50px;
